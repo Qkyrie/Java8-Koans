@@ -4,3 +4,8 @@
 *.jar
 *.war
 *.ear
+.idea/
+.gradle/
+Java8-Koans.iml
+build/
+out/

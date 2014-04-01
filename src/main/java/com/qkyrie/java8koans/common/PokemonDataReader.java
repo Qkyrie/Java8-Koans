@@ -24,6 +24,12 @@ public class PokemonDataReader {
 
     public static final String POKEMON_CSV = "pokemon.csv";
 
+    private PokemonDataReader(){}
+
+    public static PokemonDataReader newInstance(){
+        return new PokemonDataReader();
+    }
+
     public List<String[]> getPokemonData() {
         try {
             URL dir_url = ClassLoader.getSystemResource(POKEMON_CSV);

@@ -52,7 +52,7 @@ public class Introduction {
          * to go!
          */
 
-        PokemonDataReader pkmnReader = new PokemonDataReader();
+        PokemonDataReader pkmnReader = PokemonDataReader.newInstance();
         List<Pokemon> allPokemon = pkmnReader.getPokemon();
 
         /*

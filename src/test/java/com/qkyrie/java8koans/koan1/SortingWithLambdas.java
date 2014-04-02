@@ -28,12 +28,12 @@ public class SortingWithLambdas {
          * If we check out the new stream api, which is available on all collections,
          * we quickly notice that sorting has become a lot easier.
          *
-         * In the past, we had to implement our own sorting algorithm, implementing
+         * In the past, we had to implement our own sorting algorithm and thus implementing
          * the Compare interface. The Compare interface is a functional interface
          * and can therefore be written as a lambda expression.
          *
          * Below you'll see the old way of sorting all pokemon by name.
-         * It's up to you to sort them using a lambda expression. We advise you to
+         * It's up to you to sort them using a lambda expression.
          */
 
         List<Pokemon> oldSortedPokemon = getUnsortedPokemon();
@@ -55,13 +55,7 @@ public class SortingWithLambdas {
                 .collect(Collectors.toList());
 
         /* </make your changes here> */
-
         assertThat(oldSortedPokemon).isEqualTo(newlySortedPokemon);
-
-    }
-
-    @Test
-    public void someMoreSorting() {
 
     }
 

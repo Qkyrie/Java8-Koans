@@ -15,7 +15,13 @@ public class CollectorsUseCases {
     /*
      * see Collectors Javadoc
      */
-
+    /**
+     * also see the      * <pre>{@code
+     *     Person[] men = people.stream()
+     *                          .filter(p -> p.getGender() == MALE)
+     *                          .toArray(Person[]::new);
+     * }</pre>
+     */
     //accumulate in list
 
     //accumulate in treeset

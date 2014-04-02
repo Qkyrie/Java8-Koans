@@ -52,4 +52,28 @@ public class Pokemon {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Pokemon pokemon = (Pokemon) o;
+
+        if (height != pokemon.height) return false;
+        if (id != pokemon.id) return false;
+        if (weight != pokemon.weight) return false;
+        if (name != null ? !name.equals(pokemon.name) : pokemon.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + height;
+        result = 31 * result + weight;
+        return result;
+    }
 }
